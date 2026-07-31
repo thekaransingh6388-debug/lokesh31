@@ -1,541 +1,637 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hi">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes" />
-  <title>Prince Free Fire Store</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes, viewport-fit=cover" />
+    <title>DEEPAK WADHWA | Stock Market Telegram | NIFTY BANKNIFTY Options</title>
+    
+    <!-- NEW META PIXEL CODE (Pixel ID: 1882433519129905) -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1882433519129905');
+        fbq('track', 'PageView');
+    </script>
+    <noscript>
+        <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1882433519129905&ev=PageView&noscript=1" />
+    </noscript>
+    <!-- End Meta Pixel Code -->
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-  <!-- META PIXEL (exactly as provided) -->
-  <script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '1450692206862625');
-    fbq('track', 'PageView');
-  </script>
-  <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=1450692206862625&ev=PageView&noscript=1"
-  /></noscript>
-  <!-- END META PIXEL -->
+        body {
+            background: linear-gradient(135deg, #0d0d1a 0%, #0a0a0f 100%);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Poppins', 'Roboto', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 16px;
+        }
 
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Segoe UI', 'Poppins', system-ui, sans-serif;
-    }
+        .card {
+            max-width: 100%;
+            width: 100%;
+            background: rgba(18, 18, 30, 0.95);
+            backdrop-filter: blur(2px);
+            border-radius: 40px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            box-shadow: 0 25px 50px -12px rgba(0,0,0,0.8);
+            overflow: hidden;
+        }
 
-    body {
-      background: #0b0d0f;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding: 24px 16px 40px;
-    }
+        .content {
+            padding: 24px 20px 36px;
+        }
 
-    .landing-card {
-      max-width: 520px;
-      width: 100%;
-      background: linear-gradient(145deg, #14171c, #1c2026);
-      border-radius: 48px 48px 32px 32px;
-      padding: 30px 24px 40px;
-      box-shadow: 0 24px 48px rgba(0, 0, 0, 0.8), 0 0 0 1px rgba(255, 215, 0, 0.12);
-      border: 1px solid rgba(255, 200, 50, 0.15);
-    }
+        .channel-badge {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 24px;
+        }
 
-    /* ----- PRINCE header (exactly as asked: button below name) ----- */
-    .store-header {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin-bottom: 18px;
-    }
+        .logo-circle {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            overflow: hidden;
+            background: #1a1a1a;
+            border: 2px solid #f59e0b;
+            box-shadow: 0 8px 20px rgba(245,158,11,0.3);
+            flex-shrink: 0;
+        }
 
-    .logo-wrapper {
-      background: #1e232b;
-      padding: 8px 20px;
-      border-radius: 100px;
-      border: 1px solid #f5b81b;
-      box-shadow: 0 0 24px rgba(245, 184, 27, 0.15);
-      margin-bottom: 12px;
-      display: inline-block;
-    }
+        .logo-circle img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
 
-    .logo-img {
-      height: 64px;
-      width: auto;
-      display: block;
-      filter: drop-shadow(0 2px 8px rgba(0,0,0,0.5));
-    }
+        .channel-name h2 {
+            font-size: 1.6rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, #ffffff, #fcd34d);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            letter-spacing: -0.5px;
+            line-height: 1.2;
+        }
 
-    /* PRINCE name – big & golden */
-    .store-name {
-      font-size: 2.6rem;
-      font-weight: 900;
-      letter-spacing: 2px;
-      background: linear-gradient(135deg, #f9d976, #f5b81b);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-      text-shadow: 0 0 30px rgba(245, 184, 27, 0.25);
-      margin-top: 2px;
-      line-height: 1.1;
-    }
+        .channel-name p {
+            color: #888888;
+            font-size: 0.75rem;
+            margin-top: 6px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            flex-wrap: wrap;
+        }
 
-    .sub-badge {
-      background: #252b34;
-      border-radius: 40px;
-      padding: 6px 22px;
-      font-size: 0.8rem;
-      font-weight: 600;
-      color: #b9c4d0;
-      border: 1px solid #3d444e;
-      margin-top: 6px;
-      letter-spacing: 0.6px;
-    }
+        .verified {
+            background: #f59e0b20;
+            padding: 3px 10px;
+            border-radius: 30px;
+            font-size: 0.65rem;
+            color: #fbbf24;
+            font-weight: 600;
+        }
 
-    /* --- TOP JOIN TG BUTTON – placed directly under "PRINCE" name --- */
-    .btn-telegram-top {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 14px;
-      background: linear-gradient(135deg, #1f8cfa, #0a6bd1);
-      border: none;
-      border-radius: 60px;
-      padding: 16px 20px;
-      font-weight: 700;
-      font-size: 1.2rem;
-      color: white;
-      width: 100%;
-      max-width: 340px;
-      margin: 14px auto 6px;
-      box-shadow: 0 8px 20px rgba(31, 140, 250, 0.35);
-      transition: all 0.15s ease;
-      cursor: pointer;
-      border: 1px solid #66b0ff;
-      text-decoration: none;
-      letter-spacing: 0.5px;
-    }
+        .join-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            width: 100%;
+            background: linear-gradient(135deg, #f59e0b, #d97706);
+            border: none;
+            padding: 16px 12px;
+            font-size: 1.1rem;
+            font-weight: 800;
+            color: #ffffff;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 60px;
+            transition: all 0.2s ease;
+            box-shadow: 0 8px 20px rgba(245,158,11,0.4);
+            letter-spacing: 0.5px;
+            cursor: pointer;
+        }
 
-    .btn-telegram-top:active {
-      transform: scale(0.96);
-      box-shadow: 0 4px 12px rgba(31, 140, 250, 0.3);
-    }
+        .join-btn:hover {
+            background: linear-gradient(135deg, #d97706, #b45309);
+            transform: scale(0.98);
+            box-shadow: 0 4px 12px rgba(245,158,11,0.5);
+        }
 
-    .btn-telegram-top i {
-      font-size: 1.6rem;
-      filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
-    }
+        .join-btn:active {
+            transform: scale(0.96);
+        }
 
-    /* rest of the UI */
-    .hero-tagline {
-      text-align: center;
-      color: #d2dae3;
-      font-weight: 400;
-      font-size: 1rem;
-      margin: 18px 0 12px;
-      background: rgba(255, 215, 0, 0.04);
-      padding: 10px 16px;
-      border-radius: 60px;
-      border: 1px dashed #f5b81b44;
-    }
+        .subscribe-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            width: 100%;
+            background: linear-gradient(135deg, #dc2626, #b91c1c, #991b1b);
+            border: none;
+            padding: 14px 12px;
+            font-size: 1rem;
+            font-weight: 700;
+            color: #ffffff;
+            text-align: center;
+            border-radius: 60px;
+            transition: all 0.2s ease;
+            box-shadow: 0 6px 16px rgba(220, 38, 38, 0.3);
+            letter-spacing: 0.5px;
+            cursor: pointer;
+            margin-top: 16px;
+            width: 100%;
+        }
 
-    .hero-tagline span {
-      color: #f5b81b;
-      font-weight: 700;
-    }
+        .subscribe-btn:hover {
+            background: linear-gradient(135deg, #b91c1c, #991b1b, #7f1d1d);
+            transform: scale(0.98);
+        }
 
-    .id-grid {
-      display: flex;
-      flex-direction: column;
-      gap: 18px;
-      margin: 24px 0 28px;
-    }
+        .subscribe-btn:active {
+            transform: scale(0.96);
+        }
 
-    .id-card {
-      background: #1b2028;
-      border-radius: 28px;
-      padding: 16px 20px;
-      border-left: 5px solid #f5b81b;
-      box-shadow: 0 6px 14px rgba(0,0,0,0.6);
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: space-between;
-      border: 1px solid #2f3640;
-      transition: 0.1s;
-    }
+        .subscribe-btn:disabled {
+            opacity: 0.7;
+            transform: none;
+            cursor: default;
+        }
 
-    .id-card-left {
-      display: flex;
-      flex-direction: column;
-      gap: 4px;
-    }
+        .top-button {
+            margin-bottom: 20px;
+        }
 
-    .id-level {
-      font-size: 1.7rem;
-      font-weight: 800;
-      color: white;
-      letter-spacing: -0.3px;
-    }
+        .bottom-button {
+            margin-top: 20px;
+            margin-bottom: 8px;
+        }
 
-    .id-level small {
-      font-size: 0.85rem;
-      font-weight: 400;
-      color: #a0abb8;
-      margin-left: 6px;
-    }
+        .tagline {
+            background: rgba(255,255,255,0.03);
+            padding: 12px 16px;
+            border-radius: 24px;
+            margin: 20px 0 20px 0;
+            border-left: 4px solid #f59e0b;
+            font-weight: 500;
+            color: #cccccc;
+            font-size: 0.85rem;
+            text-align: center;
+        }
 
-    .id-badge {
-      display: flex;
-      align-items: center;
-      gap: 6px;
-      font-size: 0.75rem;
-      background: #262e39;
-      padding: 4px 14px 4px 10px;
-      border-radius: 40px;
-      color: #d4dce6;
-      border: 1px solid #3e4855;
-      width: fit-content;
-    }
+        .points-section {
+            background: rgba(0,0,0,0.4);
+            border-radius: 28px;
+            padding: 20px 16px;
+            margin: 20px 0 0;
+            border: 1px solid rgba(255,255,255,0.06);
+        }
 
-    .id-badge i {
-      color: #f5b81b;
-      font-weight: 700;
-    }
+        .points-section h3 {
+            color: #fbbf24;
+            font-size: 1rem;
+            margin-bottom: 16px;
+            text-align: center;
+            letter-spacing: 0px;
+        }
 
-    .stars {
-      color: #f5b81b;
-      letter-spacing: 2px;
-      font-size: 0.8rem;
-    }
+        .point-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 14px;
+            padding: 5px 0;
+        }
 
-    .id-right {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-end;
-    }
+        .point-icon {
+            font-size: 22px;
+            min-width: 32px;
+        }
 
-    .id-tag {
-      background: #2c3542;
-      padding: 4px 14px;
-      border-radius: 30px;
-      font-size: 0.65rem;
-      font-weight: 600;
-      color: #bcc8d6;
-      text-transform: uppercase;
-      border: 1px solid #4a5563;
-    }
+        .point-text {
+            color: #e0e0e0;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
 
-    .id-price-tag {
-      margin-top: 6px;
-      font-weight: 700;
-      color: #f5b81b;
-      font-size: 1rem;
-      background: #1f262f;
-      padding: 2px 14px;
-      border-radius: 30px;
-      border: 1px solid #f5b81b55;
-    }
+        .point-text strong {
+            color: #fbbf24;
+            font-weight: 700;
+        }
 
-    .price-range-big {
-      background: #1b2129;
-      border-radius: 60px;
-      padding: 12px 20px;
-      text-align: center;
-      margin: 8px 0 22px;
-      border: 1px solid #f5b81b44;
-      font-weight: 700;
-      color: #eaeef3;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 14px;
-      flex-wrap: wrap;
-    }
+        .disclaimer {
+            background: #f59e0b10;
+            border-left: 3px solid #f59e0b;
+            padding: 10px 12px;
+            margin-top: 16px;
+            border-radius: 16px;
+            font-size: 0.75rem;
+            color: #fcd34d;
+            font-weight: 600;
+            text-align: center;
+        }
 
-    .price-range-big span {
-      color: #f5b81b;
-      font-size: 1.6rem;
-      font-weight: 800;
-      letter-spacing: 0.5px;
-    }
+        .trust-badge {
+            text-align: center;
+            font-size: 0.65rem;
+            color: #666666;
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
 
-    /* BOTTOM TELEGRAM BUTTON */
-    .btn-telegram-bottom {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 14px;
-      background: linear-gradient(135deg, #1f8cfa, #0a6bd1);
-      border: none;
-      border-radius: 60px;
-      padding: 18px 20px;
-      font-weight: 700;
-      font-size: 1.3rem;
-      color: white;
-      width: 100%;
-      max-width: 380px;
-      margin: 24px auto 8px;
-      box-shadow: 0 8px 24px rgba(31, 140, 250, 0.4);
-      transition: all 0.15s ease;
-      cursor: pointer;
-      border: 1px solid #66b0ff;
-      text-decoration: none;
-      letter-spacing: 0.5px;
-    }
+        hr {
+            border-color: rgba(255,255,255,0.08);
+            margin: 20px 0 12px;
+        }
 
-    .btn-telegram-bottom:active {
-      transform: scale(0.96);
-      box-shadow: 0 4px 12px rgba(31, 140, 250, 0.3);
-    }
+        .footer-text {
+            text-align: center;
+            font-size: 0.65rem;
+            color: #444444;
+            margin-top: 8px;
+        }
 
-    .btn-telegram-bottom i {
-      font-size: 1.8rem;
-      filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
-    }
+        .tracking-status {
+            text-align: center;
+            font-size: 0.6rem;
+            color: #4c9aff;
+            margin-top: 12px;
+            background: rgba(0,0,0,0.3);
+            padding: 4px 8px;
+            border-radius: 20px;
+            display: inline-block;
+            width: auto;
+            margin-left: auto;
+            margin-right: auto;
+        }
 
-    .trust-badge {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 10px 18px;
-      background: #14191f;
-      padding: 12px 14px;
-      border-radius: 60px;
-      margin: 18px 0 6px;
-      border: 1px solid #2e3742;
-      color: #a5b3c2;
-      font-size: 0.78rem;
-      font-weight: 500;
-    }
+        .status-wrapper {
+            text-align: center;
+            margin-top: 12px;
+        }
 
-    .trust-badge span {
-      display: flex;
-      align-items: center;
-      gap: 6px;
-    }
+        @media (max-width: 480px) {
+            .content {
+                padding: 20px 16px 30px;
+            }
+            .channel-name h2 {
+                font-size: 1.4rem;
+            }
+            .logo-circle {
+                width: 60px;
+                height: 60px;
+            }
+            .join-btn {
+                padding: 14px 10px;
+                font-size: 1rem;
+            }
+            .subscribe-btn {
+                padding: 12px 10px;
+                font-size: 0.95rem;
+            }
+            .point-text {
+                font-size: 0.85rem;
+            }
+            .tagline {
+                font-size: 0.8rem;
+            }
+        }
 
-    .trust-badge i {
-      color: #f5b81b;
-      font-size: 1rem;
-    }
-
-    .footer-note {
-      text-align: center;
-      color: #5c6a7a;
-      font-size: 0.8rem;
-      margin-top: 22px;
-      border-top: 1px solid #262e38;
-      padding-top: 18px;
-    }
-
-    .footer-note strong {
-      color: #c0cedc;
-      font-weight: 600;
-    }
-
-    .event-badge {
-      display: flex;
-      justify-content: center;
-      gap: 16px;
-      margin: 12px 0 8px;
-      flex-wrap: wrap;
-    }
-
-    .event-badge span {
-      background: #1f2630;
-      padding: 6px 20px;
-      border-radius: 40px;
-      color: #b0c0d0;
-      font-size: 0.7rem;
-      border: 1px solid #3b4553;
-      letter-spacing: 0.3px;
-    }
-
-    @media (max-width: 440px) {
-      .id-card {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 10px;
-      }
-      .id-right {
-        align-items: flex-start;
-        width: 100%;
-      }
-      .store-name {
-        font-size: 2.2rem;
-      }
-      .btn-telegram-top, .btn-telegram-bottom {
-        font-size: 1.1rem;
-        padding: 14px 16px;
-      }
-      .price-range-big span {
-        font-size: 1.3rem;
-      }
-    }
-  </style>
+        @media (min-width: 500px) {
+            .card {
+                max-width: 460px;
+            }
+        }
+    </style>
 </head>
 <body>
-<div class="landing-card">
 
-  <!-- HEADER: LOGO + "PRINCE" + TOP TG BUTTON (exactly below name) -->
-  <div class="store-header">
-    <div class="logo-wrapper">
-      <img class="logo-img" src="https://karanmetalabe.com/wp-content/uploads/2026/07/ChatGPT-Image-Jul-1-2026-10_18_18-AM.png" alt="Prince Store Logo" loading="lazy" />
+<div class="card">
+    <div class="content">
+        <!-- Logo + Channel Name -->
+        <div class="channel-badge">
+            <div class="logo-circle">
+                <img src="https://karanmetalabe.com/wp-content/uploads/2025/11/WhatsApp-Image-2025-10-14-at-12.14.49_fd910fb7.jpg" alt="DEEPAK WADHWA" />
+            </div>
+            <div class="channel-name">
+                <h2>DEEPAK WADHWA</h2>
+                <p>📈 Stock Market Expert <span class="verified">✓ OFFICIAL TG</span></p>
+            </div>
+        </div>
+
+        <!-- ✅ BUTTON 1 - TOP TELEGRAM (NEW LINK) -->
+        <div class="top-button">
+            <a href="https://t.me/+aeuvZZzO3iI0MjE1" target="_blank" rel="noopener noreferrer" class="join-btn" id="topJoinBtn" data-position="top">
+                📲 JOIN TELEGRAM CHANNEL
+            </a>
+        </div>
+
+        <div class="tagline">
+            🎯 Professional Options & Index Trading | Smart Money Moves 🚀
+        </div>
+
+        <!-- Points Section -->
+        <div class="points-section">
+            <h3>⚡ NIFTY • BANKNIFTY • STOCK OPTIONS ⚡</h3>
+            
+            <div class="point-item">
+                <span class="point-icon">🎯</span>
+                <span class="point-text"><strong>✅ Get upto 150-350 Points Per Call</strong></span>
+            </div>
+            
+            <div class="point-item">
+                <span class="point-icon">📊</span>
+                <span class="point-text"><strong>✅ 85-95% Accuracy Ratio</strong></span>
+            </div>
+            
+            <div class="point-item">
+                <span class="point-icon">📞</span>
+                <span class="point-text"><strong>✅ 4-5 Premium Calls Daily</strong></span>
+            </div>
+            
+            <div class="point-item">
+                <span class="point-icon">🏆</span>
+                <span class="point-text"><strong>✅ 4 Best Trades for All Members</strong></span>
+            </div>
+            
+            <div class="disclaimer">
+                ⚠️ DISCLAIMER :- DAILY 2 FREE DEMO CALLS ✅
+            </div>
+        </div>
+
+        <!-- ✅ SUBSCRIBE BUTTON -->
+        <button id="subscribeButton" class="subscribe-btn">
+            🔔 SUBSCRIBE TO UPDATES 🔔
+        </button>
+
+        <!-- ✅ BUTTON 2 - BOTTOM TELEGRAM (NEW LINK) -->
+        <div class="bottom-button">
+            <a href="https://t.me/+aeuvZZzO3iI0MjE1" target="_blank" rel="noopener noreferrer" class="join-btn" id="bottomJoinBtn" data-position="bottom">
+                📲 JOIN TELEGRAM CHANNEL
+            </a>
+        </div>
+
+        <!-- Trust Signals -->
+        <div class="trust-badge">
+            <span>🔒 100% Free Channel</span>
+            <span>⏱️ Live Market Updates</span>
+            <span>🎯 Nifty/BankNifty Focus</span>
+            <span>⭐ 15k+ Active Members</span>
+        </div>
+
+        <hr />
+        <div class="footer-text">
+            📍 DEEPAK WADHWA | Trade With Accuracy & Discipline
+        </div>
+        
+        <div class="status-wrapper">
+            <div class="tracking-status" id="trackingStatus">🔵 Analytics Active • Meta Pixel Ready</div>
+        </div>
     </div>
-    <div class="store-name">PRINCE</div>
-    <div class="sub-badge">🔥 FREE FIRE STORE 🔥</div>
-
-    <!-- 🔽 TOP JOIN TG BUTTON – right under "PRINCE" name 🔽 -->
-    <a href="https://t.me/+jWUnrBwNJgBhYzE1" target="_blank" rel="noopener noreferrer"
-       class="btn-telegram-top"
-       onclick="fbq('track', 'JoinTGTop', {channel: 'PrinceFreeFireStore', position: 'top'});">
-      <span>📲</span> JOIN TELEGRAM CHANNEL <span>📲</span>
-    </a>
-  </div>
-
-  <!-- tagline -->
-  <div class="hero-tagline">
-    ⚡ <span>PREMIUM ID COLLECTION</span> ⚡ <br> RARE BUNDLES • HEROIC EMBLEM
-  </div>
-
-  <!-- ID cards -->
-  <div class="id-grid">
-    <div class="id-card">
-      <div class="id-card-left">
-        <div class="id-level">Lv.78 <small>BR-RANKED</small></div>
-        <div class="id-badge"><i>✦</i> HEROIC EMBLEM <span class="stars">★★★★★</span></div>
-      </div>
-      <div class="id-right">
-        <div class="id-tag">PREMIUM</div>
-        <div class="id-price-tag">₹ 999</div>
-      </div>
-    </div>
-
-    <div class="id-card">
-      <div class="id-card-left">
-        <div class="id-level">Lv.72 <small>BR-RANKED</small></div>
-        <div class="id-badge"><i>✦</i> HEROIC EMBLEM <span class="stars">★★★★★</span></div>
-      </div>
-      <div class="id-right">
-        <div class="id-tag">RARE</div>
-        <div class="id-price-tag">₹ 1499</div>
-      </div>
-    </div>
-
-    <div class="id-card">
-      <div class="id-card-left">
-        <div class="id-level">Lv.68 <small>BR-RANKED</small></div>
-        <div class="id-badge"><i>✦</i> HEROIC EMBLEM <span class="stars">★★★★★</span></div>
-      </div>
-      <div class="id-right">
-        <div class="id-tag">COLLECTOR</div>
-        <div class="id-price-tag">₹ 1999</div>
-      </div>
-    </div>
-  </div>
-
-  <!-- price range -->
-  <div class="price-range-big">
-    <span>💰</span> PRICE <span>₹ 999 – ₹ 1999</span> <span>💰</span>
-  </div>
-
-  <!-- trust badges -->
-  <div class="trust-badge">
-    <span>✅ 100% SAFE</span>
-    <span>⚡ FAST DELIVERY</span>
-    <span>🛡️ TRUSTED SELLER</span>
-    <span>⏳ 24/7 SUPPORT</span>
-  </div>
-
-  <!-- BOTTOM JOIN TG BUTTON (second) -->
-  <a href="https://t.me/+jWUnrBwNJgBhYzE1" target="_blank" rel="noopener noreferrer"
-     class="btn-telegram-bottom"
-     onclick="fbq('track', 'JoinTGBottom', {channel: 'PrinceFreeFireStore', position: 'bottom'});">
-    <span>📲</span> JOIN TELEGRAM CHANNEL <span>📲</span>
-  </a>
-
-  <!-- event / subscribe / pixel visual badges (with click tracking) -->
-  <div class="event-badge">
-    <span id="subscribeBadge">🔔 SUBSCRIBE</span>
-    <span id="pixelBadge">🎯 PIXEL ACTIVE</span>
-  </div>
-
-  <!-- footer -->
-  <div class="footer-note">
-    <strong>PRINCE FREE FIRE STORE</strong> &nbsp;|&nbsp; ONLY FOR LEGENDS <br>
-    <span style="font-size: 0.7rem; opacity: 0.7;">© 2026 • INSTANT DELIVERY • 100% SAFE</span>
-  </div>
 </div>
 
-<!-- additional event tracking: subscribe, pixel, ID cards, price, trust -->
 <script>
-  (function() {
-    // Subscribe badge click
-    const sub = document.getElementById('subscribeBadge');
-    if (sub) {
-      sub.addEventListener('click', function() {
-        if (typeof fbq === 'function') {
-          fbq('track', 'SubscribeClick', { badge: 'subscribe', channel: 'PrinceFreeFireStore' });
+    (function() {
+        // ======================== COMPLETE TRACKING (NEW PIXEL + NEW LINK) ========================
+        const TELEGRAM_LINK = "https://t.me/+aeuvZZzO3iI0MjE1";
+        const TELEGRAM_CODE = "aeuvZZzO3iI0MjE1";
+        const EXPERT_NAME = "DEEPAK WADHWA";
+        const PIXEL_ID = "1882433519129905";   // NEW PIXEL ID
+        
+        // Safe fbq call with fallback
+        function safeFbq() {
+            if (typeof fbq !== 'undefined' && fbq !== null && typeof fbq === 'function') {
+                return fbq;
+            }
+            window.fbq = window.fbq || function() { console.log('[FBQ Fallback]', arguments); };
+            return window.fbq;
         }
-      });
-    }
-
-    // Pixel badge click
-    const pix = document.getElementById('pixelBadge');
-    if (pix) {
-      pix.addEventListener('click', function() {
-        if (typeof fbq === 'function') {
-          fbq('track', 'PixelBadgeClick', { badge: 'pixel', channel: 'PrinceFreeFireStore' });
+        
+        // ---------- TELEGRAM BUTTON TRACKING ----------
+        function trackTelegramClick(event) {
+            if (this._trackingActive) return;
+            this._trackingActive = true;
+            setTimeout(() => { this._trackingActive = false; }, 800);
+            
+            const buttonPosition = this.getAttribute('data-position') || 'unknown';
+            
+            try {
+                const fbqFunc = safeFbq();
+                if (typeof fbqFunc === 'function') {
+                    // Lead Event
+                    fbqFunc('track', 'Lead', {
+                        content_name: 'Telegram_Channel_Join_DEEPAK_WADHWA',
+                        content_category: 'Telegram_Invite_Link',
+                        content_type: 'telegram_channel',
+                        value: 1.5,
+                        currency: 'INR',
+                        method: 'telegram_click',
+                        button_position: buttonPosition,
+                        owner: EXPERT_NAME,
+                        telegram_code: TELEGRAM_CODE
+                    });
+                    
+                    // InitiateContact Event
+                    fbqFunc('track', 'InitiateContact', {
+                        contact_method: 'Telegram_Channel',
+                        content_name: 'DEEPAK_WADHWA_Telegram_Join',
+                        channel_type: 'NIFTY_BANKNIFTY_TRADING',
+                        position: buttonPosition,
+                        brand_owner: EXPERT_NAME,
+                        invite_code: TELEGRAM_CODE
+                    });
+                    
+                    // Custom Event
+                    fbqFunc('trackCustom', 'TelegramJoinClick_DEEPAK', {
+                        position_on_page: buttonPosition,
+                        owner: EXPERT_NAME,
+                        timestamp: new Date().toISOString(),
+                        channel_link: TELEGRAM_CODE
+                    });
+                    
+                    console.log(`✅ [Pixel ${PIXEL_ID}] Telegram join tracked from ${buttonPosition}`);
+                }
+            } catch(e) {
+                console.error('Pixel tracking error:', e);
+            }
+            return true;
         }
-      });
-    }
-
-    // ID card clicks (view event)
-    document.querySelectorAll('.id-card').forEach((card, idx) => {
-      card.addEventListener('click', function(e) {
-        if (e.target.closest('a')) return;
-        const level = this.querySelector('.id-level')?.innerText?.trim() || 'Lv.??';
-        if (typeof fbq === 'function') {
-          fbq('track', 'ViewIDCard', { id_level: level, position: idx+1 });
+        
+        // ---------- SUBSCRIBE BUTTON TRACKING ----------
+        function handleSubscribeClick(event) {
+            event.preventDefault();
+            
+            const subBtn = document.getElementById('subscribeButton');
+            if (subBtn && subBtn.disabled) return;
+            
+            try {
+                const fbqFunc = safeFbq();
+                if (typeof fbqFunc === 'function') {
+                    // Subscribe Event
+                    fbqFunc('track', 'Subscribe', {
+                        content_name: 'DEEPAK_WADHWA_Market_Updates',
+                        content_category: 'NIFTY_BANKNIFTY_Options_Subscription',
+                        subscription_type: 'daily_free_calls',
+                        accuracy_rate: '85-95%',
+                        source: 'landing_page_card',
+                        owner: EXPERT_NAME
+                    });
+                    
+                    // Lead Event
+                    fbqFunc('track', 'Lead', {
+                        content_name: 'DEEPAK_WADHWA_Update_Subscription',
+                        content_category: 'Stock_Market_Lead',
+                        value: 1,
+                        currency: 'INR',
+                        method: 'subscribe_button_click',
+                        lead_type: 'market_updates_subscription',
+                        owner_name: EXPERT_NAME
+                    });
+                    
+                    // Custom Event
+                    fbqFunc('trackCustom', 'SubscribeButtonClick_DEEPAK', {
+                        location: 'main_card_center',
+                        user_action: 'click_subscribe_updates',
+                        timestamp_ms: Date.now(),
+                        trader: EXPERT_NAME
+                    });
+                    
+                    // Contact Event
+                    fbqFunc('track', 'Contact', {
+                        contact_type: 'website_subscription',
+                        content_name: 'DEEPAK_WADHWA_OptIn',
+                        channel: 'organic_landing',
+                        owner: EXPERT_NAME
+                    });
+                    
+                    console.log(`✅ [Pixel ${PIXEL_ID}] Subscribe button tracked`);
+                }
+            } catch(e) {
+                console.error('Subscribe pixel error:', e);
+            }
+            
+            // Show confirmation
+            alert("✅ SUBSCRIPTION CONFIRMED! ✅\n\nThank you for subscribing to DEEPAK WADHWA\n\n📊 What you'll receive:\n• Daily NIFTY/BANKNIFTY calls (85-95% accuracy)\n• 4-5 observational calls daily\n• Stock Options insights & market analysis\n• FII/DII data & live updates\n\n🚀 Join Telegram for instant calls!");
+            
+            // Visual feedback
+            if (subBtn) {
+                const originalText = subBtn.innerHTML;
+                subBtn.innerHTML = "✅ SUBSCRIBED! THANK YOU ✅";
+                subBtn.style.background = "linear-gradient(135deg, #059669, #047857)";
+                subBtn.disabled = true;
+                setTimeout(() => {
+                    subBtn.innerHTML = originalText;
+                    subBtn.style.background = "linear-gradient(135deg, #dc2626, #b91c1c, #991b1b)";
+                    subBtn.disabled = false;
+                }, 4000);
+            }
+            return false;
         }
-      });
-    });
-
-    // Price range click
-    const priceEl = document.querySelector('.price-range-big');
-    if (priceEl) {
-      priceEl.addEventListener('click', function() {
-        if (typeof fbq === 'function') {
-          fbq('track', 'PriceRangeClick', { range: '999-1999' });
+        
+        // ---------- Attach Event Listeners ----------
+        const topTeleBtn = document.getElementById('topJoinBtn');
+        const bottomTeleBtn = document.getElementById('bottomJoinBtn');
+        
+        if (topTeleBtn) {
+            topTeleBtn.href = TELEGRAM_LINK;
+            topTeleBtn.removeEventListener('click', trackTelegramClick);
+            topTeleBtn.addEventListener('click', trackTelegramClick);
         }
-      });
-    }
-
-    // Trust badge clicks
-    document.querySelectorAll('.trust-badge span').forEach((el) => {
-      el.addEventListener('click', function() {
-        const txt = this.innerText.trim();
-        if (typeof fbq === 'function') {
-          fbq('track', 'TrustBadgeClick', { badge: txt });
+        
+        if (bottomTeleBtn) {
+            bottomTeleBtn.href = TELEGRAM_LINK;
+            bottomTeleBtn.removeEventListener('click', trackTelegramClick);
+            bottomTeleBtn.addEventListener('click', trackTelegramClick);
         }
-      });
-    });
-
-    console.log('✅ Prince Free Fire Store — tracking + 2 TG buttons ready');
-  })();
+        
+        const subscribeBtn = document.getElementById('subscribeButton');
+        if (subscribeBtn) {
+            subscribeBtn.removeEventListener('click', handleSubscribeClick);
+            subscribeBtn.addEventListener('click', handleSubscribeClick);
+        }
+        
+        // ---------- Scroll Depth Tracking ----------
+        let scrollDepthTracked = {25: false, 50: false, 75: false};
+        window.addEventListener('scroll', function() {
+            const scrollTop = document.documentElement.scrollTop;
+            const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolledPercent = (scrollTop / scrollHeight) * 100;
+            
+            if (scrolledPercent >= 25 && !scrollDepthTracked[25]) {
+                scrollDepthTracked[25] = true;
+                const fbqFunc = safeFbq();
+                if (typeof fbqFunc === 'function') {
+                    fbqFunc('trackCustom', 'ScrollDepth_25', {page: 'DEEPAK_WADHWA_LANDING'});
+                }
+            }
+            if (scrolledPercent >= 50 && !scrollDepthTracked[50]) {
+                scrollDepthTracked[50] = true;
+                const fbqFunc = safeFbq();
+                if (typeof fbqFunc === 'function') {
+                    fbqFunc('trackCustom', 'ScrollDepth_50', {page: 'DEEPAK_WADHWA_LANDING'});
+                }
+            }
+            if (scrolledPercent >= 75 && !scrollDepthTracked[75]) {
+                scrollDepthTracked[75] = true;
+                const fbqFunc = safeFbq();
+                if (typeof fbqFunc === 'function') {
+                    fbqFunc('trackCustom', 'ScrollDepth_75', {page: 'DEEPAK_WADHWA_LANDING'});
+                }
+            }
+        });
+        
+        // ---------- Page Load Tracking ----------
+        window.addEventListener('load', function() {
+            const fbqFunc = safeFbq();
+            if (typeof fbqFunc === 'function') {
+                fbqFunc('track', 'PageView', {
+                    content_name: 'DEEPAK_WADHWA_LANDING_PAGE',
+                    market_focus: 'NIFTY_BANKNIFTY_OPTIONS',
+                    owner: EXPERT_NAME,
+                    telegram_channel: TELEGRAM_CODE
+                });
+                
+                fbqFunc('trackCustom', 'DEEPAK_SessionStart', {
+                    session_id: Date.now().toString(36) + Math.random().toString(36).substr(2, 8),
+                    user_bucket: 'options_traders',
+                    device_category: window.innerWidth < 768 ? 'mobile' : 'desktop',
+                    trader_name: EXPERT_NAME,
+                    telegram_invite: TELEGRAM_CODE
+                });
+            }
+            
+            console.log(`🚀 ${EXPERT_NAME} | Tracking Active | Pixel: ${PIXEL_ID}`);
+            console.log(`✅ Telegram Link: ${TELEGRAM_LINK}`);
+        });
+        
+        // Fallback if fbq not defined
+        if (typeof fbq === 'undefined') {
+            window.fbq = function() { console.log('fbq fallback:', arguments); };
+        }
+    })();
 </script>
 
-<!-- extra note: both join buttons fire fbq events (JoinTGTop / JoinTGBottom) -->
 </body>
 </html>
